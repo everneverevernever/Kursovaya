@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>registration_form</class>
+ <widget class="QWidget" name="registration_form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>407</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Регистрация</string>
+  </property>
+  <property name="accessibleName">
+   <string/>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+ {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                stop:0 rgb(148, 87, 235), stop:1 rgb(87, 37, 138));
+}</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>280</y>
+     <width>261</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="push_registration">
+      <property name="styleSheet">
+       <string notr="true">/* Стиль для QPushButton */
+QPushButton {
+    background-color: rgba(255, 255, 255, 50);; /* Фиолетовый цвет фона */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Закругленные углы */
+}
+
+/* Стиль для QPushButton при наведении */
+QPushButton:hover {
+    background-color: #8e44ad;
+}</string>
+      </property>
+      <property name="text">
+       <string>Зарегистрироваться</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="push_login">
+      <property name="styleSheet">
+       <string notr="true">/* Стиль для QPushButton */
+QPushButton {
+    background-color: rgba(255, 255, 255, 50);; /* Фиолетовый цвет фона */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Закругленные углы */
+}
+
+/* Стиль для QPushButton при наведении */
+QPushButton:hover {
+    background-color: #8e44ad;
+}</string>
+      </property>
+      <property name="text">
+       <string>Войти</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_registr">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>10</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+ {
+    background-color: rgba(255, 255, 255, 50); /* Фиолетовый цвет фона */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Закругленные углы */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Регистрация</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_mailregist">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>170</y>
+     <width>311</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+ {
+    background-color: rgba(255, 255, 255, 50); /* Фиолетовый цвет фона */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Закругленные углы */
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Почта:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_nameuser">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>70</y>
+     <width>311</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+ {
+    background-color: rgba(255, 255, 255, 50); /* Фиолетовый цвет фона */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Закругленные углы */
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Имя пользователя</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_passwordregistr">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>220</y>
+     <width>311</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+ {
+    background-color: rgba(255, 255, 255, 50); /* Фиолетовый цвет фона */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Закругленные углы */
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Пароль:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_fullname">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>120</y>
+     <width>311</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+ {
+    background-color: rgba(255, 255, 255, 50); /* Фиолетовый цвет фона */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Закругленные углы */
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>ФИО</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

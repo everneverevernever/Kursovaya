@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tablewidgetadd_form</class>
+ <widget class="QWidget" name="tablewidgetadd_form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>392</width>
+    <height>347</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Таблицы</string>
+  </property>
+  <property name="accessibleName">
+   <string/>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+ {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                stop:0 rgb(148, 87, 235), stop:1 rgb(87, 37, 138));
+}</string>
+  </property>
+  <widget class="QLabel" name="label_tables">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>0</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+ {
+    background-color: rgba(255, 255, 255, 50); /* Фиолетовый цвет фона */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Закругленные углы */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Таблицы</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pusg_agreements">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>210</y>
+     <width>191</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* Стиль для QPushButton */
+QPushButton {
+    background-color: rgba(255, 255, 255, 50);; /* Фиолетовый цвет фона */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Закругленные углы */
+}
+
+/* Стиль для QPushButton при наведении */
+QPushButton:hover {
+    background-color: #8e44ad;
+}</string>
+   </property>
+   <property name="text">
+    <string>Договоры</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_staff">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>280</y>
+     <width>193</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* Стиль для QPushButton */
+QPushButton {
+    background-color: rgba(255, 255, 255, 50);; /* Фиолетовый цвет фона */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Закругленные углы */
+}
+
+/* Стиль для QPushButton при наведении */
+QPushButton:hover {
+    background-color: #8e44ad;
+}</string>
+   </property>
+   <property name="text">
+    <string>Сотрудники</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_services">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>160</y>
+     <width>191</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* Стиль для QPushButton */
+QPushButton {
+    background-color: rgba(255, 255, 255, 50);; /* Фиолетовый цвет фона */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Закругленные углы */
+}
+
+/* Стиль для QPushButton при наведении */
+QPushButton:hover {
+    background-color: #8e44ad;
+}</string>
+   </property>
+   <property name="text">
+    <string>Сервисы</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_serviceTypes">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>110</y>
+     <width>193</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* Стиль для QPushButton */
+QPushButton {
+    background-color: rgba(255, 255, 255, 50);; /* Фиолетовый цвет фона */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Закругленные углы */
+}
+
+/* Стиль для QPushButton при наведении */
+QPushButton:hover {
+    background-color: #8e44ad;
+}</string>
+   </property>
+   <property name="text">
+    <string>Типы сервисов</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_clients">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>60</y>
+     <width>193</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* Стиль для QPushButton */
+QPushButton {
+    background-color: rgba(255, 255, 255, 50);; /* Фиолетовый цвет фона */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Закругленные углы */
+}
+
+/* Стиль для QPushButton при наведении */
+QPushButton:hover {
+    background-color: #8e44ad;
+}</string>
+   </property>
+   <property name="text">
+    <string>Клиенты</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
