@@ -29,10 +29,15 @@ class Auntification(QDialog, Ui_authorization_form):
 
         try:
             access_level = [item[0] for item in self.datab.query_login_check(username, password)]
-            access_level = access_level[0]
-            if access_level >= 2:
-
+            access_level = str(access_level[0])
+            print(access_level)
+            if access_level == '3':
                 self.openMainWindow(access_level)
+                self.close()
+                self.mainWindow.show()
+            elif access_level == '2':
+                self.openMainWindow(access_level)
+                self.mainWindow.widget_add_table.push_staff.hide()
                 self.close()
                 self.mainWindow.show()
             else:
@@ -40,7 +45,8 @@ class Auntification(QDialog, Ui_authorization_form):
                                                             'доступа к программе.\n'
                                                             'Дождитесь назначения вас модератором')
                 self.error_widget1.show()
-        except:
+        except Exception as e:
+            print(e)
             self.error_widget1.label_text_error.setText('Неправильное имя пользователя или пароль')
             self.error_widget1.show()
 
@@ -99,11 +105,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.setWindowTitle("Главное окно")
         self.datab = Database()
 
+
         self.analysis_widget = WidgetAnalysis()
         self.error_widget = WidgetError()
         self.clients_add_widget = WidgetAddDataTable()
         self.clients_change_widget = WidgetChangeDataTable()
-
+        self.widget_add_table = WidgetAddTable()
 
         self.table_name = 'Clients'
 
@@ -124,7 +131,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.analysis_widget.push_med_balance.clicked.connect(self.average_balance)
         self.analysis_widget.push_all_agreements.clicked.connect(self.count_agreements)
     def openWidgetAddTable(self):
-        self.widget_add_table = WidgetAddTable()
+
         self.widget_add_table.push_clients.clicked.connect(lambda: self.view_data_TableView('Clients'))
         self.widget_add_table.push_serviceTypes.clicked.connect(lambda: self.view_data_TableView('ServiceTypes'))
         self.widget_add_table.push_services.clicked.connect(lambda: self.view_data_TableView('Services'))
